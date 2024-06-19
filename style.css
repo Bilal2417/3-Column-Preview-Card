@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#sectionColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.containerColumn{
+    display: flex;
+    justify-content: center;
+}
+.cardColumn{
+    color: white;
+    font-family: "Lexend Deca";
+    font-weight: 300;
+    width: 15%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 40px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.columnImg img{
+    width: 30%;
+}
+.columnHead{
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.columnDescription{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    line-height: 24px;
+    height: 165px;
+}
+.columnOrange{
+   background-color: hsl(31, 77%, 52%);
+   border-radius: 10px 0 0 10px;
+}
+.columnDarkCyan{
+    background-color: hsl(184, 100%, 22%);
+}
+.columnVeryDarkCyan{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.buttonColumn{
+    padding: 12px 32px;
+    border-radius: 22px;
+    width: fit-content;
+    font-size: 14px;
+    border: 1px solid #fff;
+}
+.columnOrange .buttonColumn{
+    color:hsl(31, 77%, 52%) ;
+}
+.columnDarkCyan .buttonColumn{
+    color:hsl(184, 100%, 22%) ;
+}
+.columnVeryDarkCyan .buttonColumn{
+    color:hsl(179, 100%, 13%) ;
+}
+.buttonColumn:hover{
+    color: #fff;
+    background-color: transparent;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+/*********************************/
+/********RESPONSIVE**************/
+/*********************************/
+@media (max-width: 1200px){
+    .cardColumn{
+        width: 20%;
+    }
+}
+@media (max-width: 735px){
+    #sectionColumn {
+        padding: 0 14px 20px;
+    }
+    .cardColumn{
+        width: 25%;
+    }
+}
+@media (max-width: 710px){
+    .cardColumn{
+        width: 30%;
+    }
+}
+@media (max-width: 685px){
+    body{
+        padding: 100px 0;
+    }
+    .containerColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .cardColumn {
+            width: 50%;
+        }
+        .columnOrange {
+            border-radius: 10px 10px 0 0;
+        }
+        .columnVeryDarkCyan {
+            border-radius: 0 0 10px 10px;
+        }
+        .columnDescription {
+            font-size: 18px;
+        }
+        .columnHead{
+            font-size: 36px;
+        }
+        .buttonColumn {
+            padding: 14px 38px;
+            border-radius: 24px;
+            width: fit-content;
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid #fff;
+        }
+}
+@media (max-width:550px){
+    .cardColumn{
+        width: 60%;
+    }
+}
+@media (max-width:440px){
+    .cardColumn{
+        width: 70%;
+    }
+    .columnDescription {
+        font-size: 16px;
+    }
+}
+@media (max-width:340px){
+    body {
+        padding: 100px 10px;
+    }
+    .cardColumn{
+        width: 80%;
+    } 
+       .columnDescription{
+        height: 180px;
+    }
+}
